@@ -6,6 +6,7 @@ body {
 header {
     height: 50px;
     background: #212121;
+    position: relative;
 }
 
 header nav {
@@ -37,6 +38,8 @@ ul {
     background-color: rgba(0,0,0,0.6);
     display: flex;
     align-items: center;
+    position: relative;
+    z-index: 2;
 }
 
 .logo_description {
@@ -76,4 +79,49 @@ ul {
     text-transform: uppercase;
     color: #FFFFFF;
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+}
+
+/*//////////Partners section//////////*/
+.partners {
+    position: relative;
+    background: center center/ cover no-repeat url("../img/backgrounds/uber_bg.jpg");
+    padding: 152px 0 186px;
+    z-index: 1;
+    color: #FFFFFF;
+}
+
+.partners h1 {
+    font-weight: 900;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.partners h2 {
+    font-weight: 700;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+.partners .partners_text {
+    margin-top: 28px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.partners .partners_btn {
+    border: none;
+
+    margin-top: 128px;
+    width: 259px;
+    height: 63px;
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+    color: #FFFFFF;
 }
