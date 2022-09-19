@@ -125,3 +125,72 @@ ul {
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
     color: #FFFFFF;
 }
+
+/*Work together*/
+.work_together {
+    padding-bottom: 64px;
+}
+
+.work_together .advantages {
+    margin: 20px auto 0;
+    width: 112px;
+    height: 24px;
+    background: #000000;
+
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.work_together h2 {
+    margin-top: 33px;
+    font-weight: 700;
+    font-size: 38px;
+    text-transform: uppercase;
+    color: #222222;
+}
+
+.work_together .work_together_item {
+    margin-top: 16px;
+    text-align: left;
+}
+
+.work_together_item .item_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 113px;
+    height: 113px;
+    background: #1EACC7;
+    border-radius: 100%;
+}
+
+.work_together_item .item_img img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.work_together_item h3 {
+    font-size: 17px;
+    line-height: 21px;
+    color: #1EACC7;
+}
+
+.work_together_item div {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 21px;
+    color: #202020;
+}
+
+.item_text {
+    padding-right: 15px;
+}
+
+
+
