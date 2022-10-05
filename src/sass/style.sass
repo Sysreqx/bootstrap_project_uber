@@ -1,3 +1,10 @@
+$main_color: #1eacc7
+$second-color: #ff5656
+
+=btn_hover
+  &:hover
+    background: $main_color none
+
 body
   font-family: 'Roboto', sans-serif
   font-weight: 400
@@ -66,6 +73,7 @@ header
   text-transform: uppercase
   color: #FFFFFF
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
+  +btn_hover
 
 .partners
   position: relative
@@ -99,6 +107,7 @@ header
     text-transform: uppercase
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
     color: #FFFFFF
+    +btn_hover
 
 .title
   margin: 0 auto
@@ -226,6 +235,48 @@ header
     background: center center/ cover no-repeat url("../img/backgrounds/mobile_bg.jpg")
     bottom: 0
     z-index: -1
+
+.require
+  margin: 66px 0 87px
+  .require_block
+    margin: 32px 0
+  .require_title
+    color: #1CA8C3
+    font-weight: 400
+    font-size: 22px
+    line-height: 24px
+  .require_list
+    margin-top: 16px
+    li
+      position: relative
+      padding-left: 50px
+      font-weight: 300
+      font-size: 17px
+      line-height: 24px
+      color: #222222
+      margin-bottom: 10px
+      &:before
+        content: ''
+        display: block
+        position: absolute
+        left: 22px
+        top: 3px
+        width: 21px
+        height: 20px
+        background: url("../img/sections/conditions/conditions_check_blue.png") center center/ cover no-repeat
+  &_descr
+    margin-top: 25px
+    font-weight: 300
+    font-size: 17px
+    line-height: 24px
+    color: #1CA8C3
+  .warning
+    .require_title
+      color: #FF5656
+    li:before
+      background: url("../img/sections/conditions/conditions_check_red.png") center center/ cover no-repeat
+
+
 
 
 
