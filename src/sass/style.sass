@@ -9,6 +9,7 @@ body
   font-family: 'Roboto', sans-serif
   font-weight: 400
 
+
 header
   height: 50px
   background: #212121
@@ -197,16 +198,38 @@ header
       text-transform: uppercase
       color: #FFFFFF
     .img
-      width: 29px
-      height: 29px
+      width: 28px
+      height: 28px
       background: #000000
       border-radius: 100%
       position: absolute
       bottom: 34px
       left: 50%
       transform: translateX(-50%)
+      &:before
+        content: ""
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+        display: block
+        height: 2px
+        width: 14px
+        background-color: $main_color
+      &:after
+        content: ""
+        position: absolute
+        left: 50%
+        transform: translate(-50%, 50%)
+        display: block
+        height: 14px
+        width: 2px
+        background-color: $main_color
       &:hover
         cursor: pointer
+        &:before, &:after
+          background-color: $second-color
+
 
 .choice
   min-height: 897px
